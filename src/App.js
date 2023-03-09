@@ -6,6 +6,6 @@ export default function App(){
   return(
     <h1 className="text-3xl font-bold underline">
       افزودن فونت وزیرمتن از گوگل فونت
-    </h1>
+    </h1>    
   )
 }
