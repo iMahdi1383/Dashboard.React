@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { FiSettings } from 'react-icons/fi';
+import {CiSettings} from 'react-icons/ci'
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 import { Navbar, Footer, Sidebar, ThemeSettings } from './components';
 import {
@@ -32,8 +32,8 @@ const App = () => {
           {/* ThemeSettingsButton */}
           <div className="fixed left-4 bottom-4" style={{ zIndex: '1000' }}>
             <TooltipComponent content="تنظیمات قالب" position="TopCenter">
-              <button type="button" className="text-3xl p-4 rounded-3xl bg-indigo-600 text-indigo-100 hover:bg-indigo-800">
-                <FiSettings />
+              <button type="button" className="text-4xl p-3 rounded-3xl bg-blue-500 text-white shadow-blue-300 shadow-xl hover:bg-blue-600 transition-all">
+                <CiSettings />
               </button>
             </TooltipComponent>
           </div>

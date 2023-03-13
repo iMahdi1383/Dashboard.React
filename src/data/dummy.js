@@ -1,14 +1,24 @@
 import React from 'react';
-import { AiOutlineCalendar, AiOutlineShoppingCart, AiOutlineAreaChart, AiOutlineBarChart, AiOutlineStock } from 'react-icons/ai';
-import { FiShoppingBag, FiEdit, FiPieChart, FiBarChart, FiCreditCard, FiStar, FiShoppingCart } from 'react-icons/fi';
-import { BsKanban, BsBarChart, BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft } from 'react-icons/bs';
-import { BiColorFill } from 'react-icons/bi';
-import { IoMdContacts } from 'react-icons/io';
-import { RiContactsLine, RiStockLine } from 'react-icons/ri';
+import {
+  HiOutlineAdjustmentsVertical,
+  HiOutlineChartPie,
+  HiOutlinePresentationChartBar,
+  HiOutlineChartBar,
+  HiOutlineEyeDropper,
+  HiOutlinePencilSquare,
+  HiOutlineBriefcase,
+  HiOutlineFaceSmile,
+  HiOutlineUsers,
+  HiOutlineCalendar,
+  HiOutlineShoppingBag,
+  HiOutlineShoppingCart,
+} from 'react-icons/hi2';
+import { AiOutlineAreaChart, AiOutlineBarChart, AiOutlineStock } from 'react-icons/ai';
+import { FiBarChart, FiCreditCard, FiStar, FiShoppingCart } from 'react-icons/fi';
+import { BsTriangle, BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft } from 'react-icons/bs';
 import { MdOutlineSupervisorAccount } from 'react-icons/md';
 import { HiOutlineRefresh } from 'react-icons/hi';
 import { TiTick } from 'react-icons/ti';
-import { GiLouvrePyramid } from 'react-icons/gi';
 import { GrLocation } from 'react-icons/gr';
 import Logo from './Akolad.svg';
 import avatar from './avatar.jpg';
@@ -23,9 +33,7 @@ import product5 from './product5.jpg';
 import product6 from './product6.jpg';
 import product7 from './product7.jpg';
 
-export const AkoladLogo = (props) => (
-  <img src={Logo} alt="logo" className="akolad-logo" style={{height: props.size}}/>
-  );
+export const AkoladLogo = (props) => <img src={Logo} alt="logo" className="akolad-logo" style={{ height: props.size }} />;
 
 export const gridOrderImage = (props) => (
   <div>
@@ -370,7 +378,7 @@ export const links = [
       {
         name: 'مدیریت فروشگاه',
         path: 'ecommerce',
-        icon: <FiShoppingBag />,
+        icon: <HiOutlineShoppingBag />,
       },
     ],
   },
@@ -380,17 +388,17 @@ export const links = [
       {
         name: 'سفارشات',
         path: 'orders',
-        icon: <AiOutlineShoppingCart />,
+        icon: <HiOutlineShoppingCart />,
       },
       {
         name: 'کارمندان',
         path: 'employees',
-        icon: <IoMdContacts />,
+        icon: <HiOutlineUsers />,
       },
       {
         name: 'مشتریان',
         path: 'customers',
-        icon: <RiContactsLine />,
+        icon: <HiOutlineFaceSmile />,
       },
     ],
   },
@@ -400,22 +408,22 @@ export const links = [
       {
         name: 'تقویم',
         path: 'calendar',
-        icon: <AiOutlineCalendar />,
+        icon: <HiOutlineCalendar />,
       },
       {
         name: 'مدیریت کارها',
         path: 'kanban',
-        icon: <BsKanban />,
+        icon: <HiOutlineBriefcase />,
       },
       {
         name: 'ویرایشگر متنی',
         path: 'editor',
-        icon: <FiEdit />,
+        icon: <HiOutlinePencilSquare />,
       },
       {
         name: 'انتخاب کننده رنگ',
         path: 'color-picker',
-        icon: <BiColorFill />,
+        icon: <HiOutlineEyeDropper />,
       },
     ],
   },
@@ -433,34 +441,34 @@ export const links = [
         icon: <AiOutlineAreaChart />,
       },
       {
-        name: 'نمودار میله ای',
+        name: 'نمودار ستونی',
         path: 'bar-chart',
         icon: <AiOutlineBarChart />,
       },
       {
         name: 'نمودار دایره ای',
         path: 'pie-chart',
-        icon: <FiPieChart />,
+        icon: <HiOutlineChartPie />,
       },
       {
         name: 'نمودار مالی',
         path: 'financial-chart',
-        icon: <RiStockLine />,
+        icon: <HiOutlineAdjustmentsVertical />,
       },
       {
         name: 'نمودار نقشه رنگی',
         path: 'color-mapping-chart',
-        icon: <BsBarChart />,
+        icon: <HiOutlineChartBar />,
       },
       {
         name: 'نمودار هرمی',
         path: 'pyramid-chart',
-        icon: <GiLouvrePyramid />,
+        icon: <BsTriangle />,
       },
       {
-        name: 'نمودار میله ای - انباشته',
+        name: 'نمودار ستونی انباشته',
         path: 'stacked-chart',
-        icon: <AiOutlineBarChart />,
+        icon: <HiOutlinePresentationChartBar />,
       },
     ],
   },
