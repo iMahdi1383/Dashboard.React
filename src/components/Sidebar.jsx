@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { SiShopware } from 'react-icons/si';
 import { MdOutlineCancel } from 'react-icons/md';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
-import { links } from '../data/dummy';
+import { links , AkoladLogo} from '../data/dummy';
 
 const Sidebar = () => {
   const isMenuActived = true;
@@ -16,11 +15,11 @@ const Sidebar = () => {
       {isMenuActived && (
         <>
           <div className="flex justify-between items-center">
-            <Link to="/" onClick={() => {}} className="items-center gap-3 mr-3 mt-4 flex text-2xl font-black dark:text-white text-slate-900">
-              <SiShopware /> <span> آکولاد </span>
+            <Link to="/" onClick={() => {}} className="items-end gap-3 mr-3 mt-6 flex text-2xl font-black dark:text-white text-slate-900">
+              <AkoladLogo size="2.5rem"/> <span> آکولاد </span>
             </Link>
             <TooltipComponent content="بستن منو" position="BottomCenter">
-              <button type="button" onClick={() => {}} className="text-xl rounded-2xl p-3 hover:bg-light-gray mt-4 block md:hidden">
+              <button type="button" onClick={() => {}} className="text-xl rounded-2xl p-3 hover:bg-light-gray mt-6 ml-2 block md:hidden">
                 <MdOutlineCancel />
               </button>
             </TooltipComponent>
