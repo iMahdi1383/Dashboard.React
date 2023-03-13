@@ -49,6 +49,7 @@
 
 /* Tooltip Component */
 .e-tooltip-wrap , .e-tip-content{
+  font-family: "AkoladSans", sans-serif !important;
   border-radius: 0.6em;
 }
 .e-arrow-tip ,.e-arrow-tip-outer , .e-arrow-tip-inner{

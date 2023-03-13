@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'AkoladSans';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url('./dana-100.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'AkoladSans';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url('./dana-200.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'AkoladSans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('./dana-300.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'AkoladSans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./dana-400.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'AkoladSans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('./dana-500.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'AkoladSans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('./dana-600.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'AkoladSans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./dana-700.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'AkoladSans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('./peyda-800.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'AkoladSans';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('./peyda-900.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'AkoladSans';
+  font-style: normal;
+  font-weight: 1000;
+  font-display: swap;
+  src: url('./dana-1000.woff2') format('woff2');
+}
