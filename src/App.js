@@ -26,13 +26,12 @@ import './App.css';
 const App = () => {
   const activeMenu = true;
   return (
-    <diV>
+    <div>
       <BrowserRouter>
         <div className="flex releative dark:bg-main-dark-bg">
-
           {/* ThemeSettingsButton */}
           <div className="fixed left-4 bottom-4" style={{ zIndex: '1000' }}>
-            <TooltipComponent content="Settings" position="TopCenter">
+            <TooltipComponent content="تنظیمات قالب" position="TopCenter">
               <button type="button" className="text-3xl p-4 rounded-3xl bg-indigo-600 text-indigo-100 hover:bg-indigo-800">
                 <FiSettings />
               </button>
@@ -73,19 +72,19 @@ const App = () => {
               <Route path="/calendar" element={<Calendar />} />
               <Route path="/color-picker" element={<ColorPicker />} />
               {/* Charts */}
-              <Route path="/line" element={<Line />} />
-              <Route path="/area" element={<Area />} />
-              <Route path="/bar" element={<Bar />} />
-              <Route path="/pie" element={<Pie />} />
-              <Route path="/financial" element={<Financial />} />
-              <Route path="/color-mapping" element={<ColorMapping />} />
-              <Route path="/pyramid" element={<Pyramid />} />
-              <Route path="/stacked" element={<Stacked />} />
+              <Route path="/line-chart" element={<Line />} />
+              <Route path="/area-chart" element={<Area />} />
+              <Route path="/bar-chart" element={<Bar />} />
+              <Route path="/pie-chart" element={<Pie />} />
+              <Route path="/financial-chart" element={<Financial />} />
+              <Route path="/color-mapping-chart" element={<ColorMapping />} />
+              <Route path="/pyramid-chart" element={<Pyramid />} />
+              <Route path="/stacked-chart" element={<Stacked />} />
             </Routes>
           </div>
         </div>
       </BrowserRouter>
-    </diV>
+    </div>
   );
 };
 
