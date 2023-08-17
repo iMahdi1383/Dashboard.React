@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import {useStateContext} from './contexts/ContextProvider';
+
 import {CiSettings} from 'react-icons/ci'
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 import { Navbar, Footer, Sidebar, ThemeSettings } from './components';
@@ -23,8 +25,11 @@ import {
 } from './pages';
 import './App.css';
 
+
+
 const App = () => {
-  const activeMenu = true;
+  const {isMenuActived} = useStateContext();
+
   return (
     <div>
       <BrowserRouter>
@@ -32,26 +37,26 @@ const App = () => {
           {/* ThemeSettingsButton */}
           <div className="fixed left-4 bottom-4" style={{ zIndex: '1000' }}>
             <TooltipComponent content="تنظیمات قالب" position="TopCenter">
-              <button type="button" className="text-4xl p-3 rounded-3xl bg-blue-500 text-white shadow-blue-300 shadow-xl hover:bg-blue-600 transition-all">
+              <button type="button" className="p-3 text-4xl text-white transition-all bg-blue-500 shadow-xl rounded-3xl shadow-blue-300 hover:bg-blue-600">
                 <CiSettings />
               </button>
             </TooltipComponent>
           </div>
 
           {/* Sidebar */}
-          {activeMenu ? (
-            <div className="sidebar w-72 fixed dark:bg-secondary-dark-bg bg-white">
+          {isMenuActived ? (
+            <div className="fixed bg-white sidebar w-72 dark:bg-secondary-dark-bg">
               <Sidebar />
             </div>
           ) : (
-            <div className="w-0 dark:bg-secondary-dark-bg bg-white">
+            <div className="w-0 bg-white dark:bg-secondary-dark-bg">
               <Sidebar />
             </div>
           )}
 
           {/* Navbar */}
-          <div className={`bg-main-bg dark:bg-main-bg min-h-screen w-full ${activeMenu ? 'md:mr-72' : 'flex-2'}`}>
-            <div className="navbar fixed md:static bg-main-bg dark:bg-main-dark-bg w-full">
+          <div className={`bg-main-bg dark:bg-main-bg min-h-screen w-full ${isMenuActived ? 'md:mr-72' : 'flex-2'}`}>
+            <div className="fixed w-full navbar md:static bg-main-bg dark:bg-main-dark-bg">
               <Navbar />
             </div>
           </div>
