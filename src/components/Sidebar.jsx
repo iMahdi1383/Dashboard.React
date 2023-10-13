@@ -6,14 +6,14 @@ import { links, AkoladLogo } from '../data/dummy';
 import { useStateContext } from '../contexts/ContextProvider';
 
 const Sidebar = () => {
-  const { isMenuActived, setIsMenuActived } = useStateContext();
+  const { isMenuActivated, setIsMenuActivated } = useStateContext();
   const normalLinkStyles = 'bg-blue-300';
   const activeLinkStyles =
     ' text-slate-700 dark:text-slate-200 dark:hover:bg-black hover:bg-slate-100';
 
   return (
     <div className="h-screen pb-10 mr-3 overflow-auto md:overflow-hidden md:hover:overflow-auto">
-      {isMenuActived && (
+      {isMenuActivated && (
         <>
           {/* Head */}
           <div className="flex items-center justify-between">
@@ -29,7 +29,7 @@ const Sidebar = () => {
             >
               <button
                 type="button"
-                onClick={() => setIsMenuActived(false)}
+                onClick={() => setIsMenuActivated(false)}
                 className="block p-3 mt-6 ml-2 text-2xl rounded-2xl text-slate-600 hover:bg-slate-100 md:hidden"
               >
                 <HiOutlineXMark />
@@ -49,7 +49,7 @@ const Sidebar = () => {
                       <NavLink
                         to={`/${link.path}`}
                         key={link.path}
-                        onClick={(prevIsMenuActived) => !prevIsMenuActived}
+                        onClick={(prevIsMenuActivated) => !prevIsMenuActivated}
                         className={(isActive) =>
                           `m-1 ml-2 flex items-center gap-4 px-4 py-3 rounded-2xl ${
                             isActive ? activeLinkStyles : normalLinkStyles

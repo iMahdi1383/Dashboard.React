@@ -28,7 +28,7 @@ import './App.css';
 
 
 const App = () => {
-  const {isMenuActived} = useStateContext();
+  const {isMenuActivated} = useStateContext();
 
   return (
     <div>
@@ -44,7 +44,7 @@ const App = () => {
           </div>
 
           {/* Sidebar */}
-          {isMenuActived ? (
+          {isMenuActivated ? (
             <div className="fixed bg-white sidebar w-72 dark:bg-secondary-dark-bg">
               <Sidebar />
             </div>
@@ -55,7 +55,7 @@ const App = () => {
           )}
 
           {/* Navbar */}
-          <div className={`bg-main-bg dark:bg-main-bg min-h-screen w-full ${isMenuActived ? 'md:mr-72' : 'flex-2'}`}>
+          <div className={`bg-main-bg dark:bg-main-bg min-h-screen w-full ${isMenuActivated ? 'md:mr-72' : 'flex-2'}`}>
             <div className="fixed w-full navbar md:static bg-main-bg dark:bg-main-dark-bg">
               <Navbar />
             </div>
